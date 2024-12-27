@@ -1,0 +1,141 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #6A82FB, #FC5C7D);
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 20px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Header */
+.header h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+    animation: slideIn 1s ease-out;
+}
+
+/* Input Section */
+.input-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.input-box {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    width: 80%;
+    margin-bottom: 20px;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-box:focus {
+    border-color: #FC5C7D;
+}
+
+.submit-button {
+    padding: 12px 20px;
+    background: #FC5C7D;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.submit-button:hover {
+    background: #6A82FB;
+    transform: scale(1.1);
+}
+
+/* Output Section */
+.output-section h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.output-text {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.output-text li {
+    margin: 15px 0;
+    padding: 12px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.output-text li:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+.output-text a {
+    color: #FC5C7D;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.output-text a:hover {
+    color: #fff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
